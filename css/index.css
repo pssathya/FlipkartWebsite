@@ -13,3 +13,27 @@
 .dropdown:hover .dropdown-content{
     display: block;    
 }
+.carousel-inner > .carousel-item > img {
+    width:100%;
+    height:300px;
+  }
+  .owl-theme > .owl-carousel > .item > img {
+    width:100%;
+    height:200px;
+  }
+  .itemTitleParagraph {
+    color: Black;
+    font-weight: bold;
+    text-align: center;
+    font-size: 15px;
+  }
+  .itemOfferParagraph {
+    color: green;
+    text-align: center;
+    font-size: 15px;
+  }
+  .itemInfoParagraph {
+    color: grey;
+    text-align: center;
+    font-size: 15px;
+  }
