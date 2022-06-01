@@ -1,3 +1,7 @@
+body {
+  background-color: lightgrey;
+}
+
 .dropdown {
   display: inline-block;
 }
@@ -16,13 +20,6 @@
   display: block;
 }
 
-body {
-  background-color: lightgrey;
-}
-#search{
-  display:block;
-  text-align:center;
-}
 .carousel-inner>.carousel-item>img {
   width: 100%;
   height: 300px;
