@@ -13,6 +13,7 @@ a{
     width:20%;
     margin-left: 5px;
     margin-top: 20px;
+    margin-right: 5px;
     float:left
 }
 .contentDiv{
@@ -20,6 +21,7 @@ a{
     width:77%;
     margin-left: 5px;
     margin-top: 20px;
+    margin-right: 5px;
     float:left
 }
 .noBorder{
@@ -42,8 +44,8 @@ a{
 }
 
 .tileContainer{
-    width: 95%;
-    height:300px;
+    width: 30%;
+    height:500px;
     box-shadow: 10px 20px 10px gray;
     float:left;
     margin-left:2%;
@@ -55,22 +57,23 @@ a{
 }
 
 .tileComponent1{
-    width:50%;
-    height:280px;
+    width:100%;
+    height:60%;
     float:left;
 }
 .tileComponent1>img{
     width:100%;
-    height:280px
+    height:100%;
 }
 .tileComponent2{
-    width:45%;
-    margin-left:2%;
-    margin-top:2%;
+    width:100%;
+    height:40%;
+    margin-left:5%;
+    margin-top:15%;
     float:left;
 }
 
-.componentHeading >p {
+.componentHeading >a {
     color:#f18c44;
     font-size:25px;
 }
