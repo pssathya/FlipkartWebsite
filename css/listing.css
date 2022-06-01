@@ -10,18 +10,16 @@ a{
 
 .filterDiv{
     background-color: white;
-    /* height:600px; */
     width:20%;
     margin-left: 5px;
     margin-top: 20px;
-    /* border:2px solid gray; */
     float:left
 }
 .contentDiv{
-    height:800px;
+    background-color: white;
     width:77%;
-    margin-left: 2%;
-    border:2px solid green;
+    margin-left: 5px;
+    margin-top: 20px;
     float:left
 }
 .noBorder{
@@ -33,7 +31,7 @@ a{
     font-size:25px;
 }
 
-#cuisine >p {
+#offers >p {
     color:#f18c44;
     font-size:25px;
 }
