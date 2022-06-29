@@ -45,8 +45,22 @@
     <table border="0" width="100%" bgcolor="#2374F0">
 
         <tr>
-            <th width="20%">
+            <th width="5%">
                 <!--Empty Space-->
+            </th>
+            <th>
+                <div class="myLocation">
+                    <!--location-->
+                    <a class="nav-link active" aria-current="page" href="#">
+                        <div class="col nav-one">
+                            <div class="con1">
+                                <span><i class="fa-solid fa-location-dot"></i></span>
+                                <p class="two location">Location</p>
+                            </div>
+                        </div>
+                    </a>
+                    <!--/location-->
+                </div>
             </th>
             <th>
                 <h4 style="color:white; ">Flipkart <br>
@@ -318,6 +332,24 @@
                 <p class="pTitle">Watches</p>
                 <p class="pOffer">Upto 80% Off</p>
                 <p class="pInfo">Grab Or Gone</p>
+            </div>
+        </div>
+    </div>
+    <div class="weatherInfo">
+        <div id="weathercard" class="container-fluid ">
+            <div id="WeatherCardTitle" class="row ">
+                <span> Weather App </span>
+            </div>
+            <div id="WeatherCardBody" class="row">
+                <p id="weatherLocation">Location</p>
+                <img id="weatherIcon" src="images\weathericon\clouds.png" alt="Weather icon">
+                <p id="weatherdata">
+                    <span id="weatherTemperature">----</span>
+                    <span id="TemperatureUnit"> &#176c</span>
+                </p>
+            </div>
+            <div id="WeatherCardFooter" class="row">
+                <p><span id="weatherDescription">--Weather Description--</span></p>
             </div>
         </div>
     </div>
@@ -731,6 +763,63 @@
         popupCloseButton.addEventListener('click', () => {
             document.querySelector('#popup').style.display = 'none';
         });
+        //!Weather App
+        let loc = document.querySelector('#weatherLocation')
+        let tempIcon = document.querySelector('#weatherIcon')
+        let tempValue = document.querySelector('#weatherTemperature')
+        let weatherDescription = document.querySelector('#weatherDescription')
+        let NavbarLocation = document.querySelector('.two')
+
+        window.addEventListener("load", () => {
+            let lat;
+            let long;
+
+            if (navigator.geolocation) {
+                navigator.geolocation.getCurrentPosition((position) => {
+                    long = position.coords.longitude;
+                    lat = position.coords.latitude;
+                    const api = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${long}&appid=2987338fad4fd5f2f31bf39d94703f78`
+                    fetch(api).then((response) => {
+                        return response.json();
+                    })
+                        .then(data => {
+                            const { name } = data;
+                            const { feels_like } = data.main;
+                            const { id, description } = data.weather[0];
+                            const { country } = data.sys
+                            console.log(data)
+
+                            loc.textContent = `${name}, ${country}`;
+                            NavbarLocation.textContent = `${name}`;
+                            weatherDescription.textContent = description;
+                            tempValue.textContent = Math.round(feels_like - 273);
+                            if (id < 300 && id >= 200) {
+                                tempIcon.src = "https://openweathermap.org/img/wn/11d@2x.png"
+                            }
+                            else if (id < 400 && id >= 300) {
+                                tempIcon.src = "https://openweathermap.org/img/wn/04d@2x.png"
+                            }
+                            else if (id < 600 && id >= 500) {
+                                tempIcon.src = "https://openweathermap.org/img/wn/09d@2x.png"
+                            }
+                            else if (id < 700 && id >= 600) {
+                                tempIcon.src = "https://openweathermap.org/img/wn/13d@2x.png"
+                            }
+                            else if (id === 800) {
+                                tempIcon.src = "https://openweathermap.org/img/wn/01d@2x.png"
+                            }
+                            else if (id < 800 && id >= 700) {
+                                tempIcon.src = "https://openweathermap.org/img/wn/50d@2x.png"
+                            }
+                            else if (id < 850 && id >= 801) {
+                                tempIcon.src = "https://openweathermap.org/img/wn/02d@2x.png"
+                            }
+
+                        })
+                })
+
+            }
+        })
     </script>
 </body>
 

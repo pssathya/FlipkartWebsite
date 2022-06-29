@@ -1,6 +1,7 @@
 body {
   background-color: lightgrey;
 }
+
 #popup {
   position: absolute;
   z-index: 100;
@@ -49,13 +50,83 @@ body {
 
 @media screen and (max-width:800px) {
   .popupcontent {
-      position: relative;
-      width: 100%;
+    position: relative;
+    width: 100%;
   }
 
   .mainspace {
-      margin-top: -5rem;
+    margin-top: -5rem;
   }
+}
+
+.myLocation {
+  background-color: white;
+  margin: 5%;
+}
+
+.location {
+  font-size: 1.1rem !important;
+  align-self: center;
+  align-self: flex-end;
+}
+
+/*Weather Card*/
+#weathercard {
+  display: inline-flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1%;
+  margin-bottom: 1rem;
+  padding: 0 1%;
+  background: var(--clr-productCard);
+  border: 3px solid var(--clr-bodyGradient);
+  backdrop-filter: blur(6.5px);
+  -webkit-backdrop-filter: blur(6.5px);
+  border: 1px solid rgba(255, 255, 255, 0.514);
+}
+
+#WeatherCardTitle {
+  background: var(--clr-navBar2);
+  width: 100%;
+  text-align: center;
+  padding: 0.2rem;
+  font-weight: 600;
+  color: var(--clr-navBarText)
+}
+
+#weatherIcon {
+  background: var(--clr-weatherCardBg);
+  border-radius: 1rem;
+}
+
+#WeatherCardFooter {
+  border-top: 2px dotted var(--foreground);
+  padding-top: 1%;
+}
+
+#WeatherCardBody {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#weatherLocation {
+  font-weight: bold;
+  margin-top: 0.5rem;
+}
+
+#weatherdata {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 500;
+}
+
+#weatherDescription {
+  font-weight: 500;
 }
 
 .dropdown {
@@ -89,7 +160,28 @@ body {
   margin-bottom: 0px;
 }
 
-.dealingOfTheDaySection,
+.dealingOfTheDaySection {
+  display: inline-block;
+  width: 73%;
+  background-color: white;
+  margin-top: 15px;
+  margin-bottom: 20px;
+  margin-left: 10px;
+  margin-right: 10px;
+  vertical-align: top;
+}
+
+.weatherInfo {
+  display: inline-block;
+  width: 23%;
+  background-color: white;
+  margin-top: 15px;
+  margin-bottom: 20px;
+  margin-left: 10px;
+  margin-right: 10px;
+  vertical-align: top;
+}
+
 .trendingOffersSection,
 .shopStudentEssentialsSection {
   background-color: white;
