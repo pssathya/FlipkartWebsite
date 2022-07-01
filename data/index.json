@@ -1,0 +1,17 @@
+{
+    "category": [
+        {
+            "id": 1,
+            "category": "Girl's Fashion"
+        },
+        {
+            "id": 2,
+            "category": "Electronics"
+        },
+        {
+            "id":3,
+            "category":"Computer"
+        }
+        
+    ]
+}

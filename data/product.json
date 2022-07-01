@@ -1,0 +1,120 @@
+{
+    "Product": [
+        {
+            "id": 1,
+            "product_name": "Girl's Top",
+            "category": "Fashion",
+            
+            "category_id": 1,
+            "Price": 2000,
+            "Size": "Small",
+            "Color": "Maroon",
+            "Brand": "Gucci",
+            "Image":"https://ibb.co/Kr7CqyZ" 
+            
+        },
+        {
+            "id": 2,
+            "product_name": "Girl's Top",
+            "category": "Fashion",
+            "category_id": 1,
+            "Price": 1500,
+            "Size": "Medium",
+            "Color": "Blue",
+            "Brand":"WEstside",
+            "Image":"https://ibb.co/Kr7CqyZ" 
+        },
+        {
+            "id": 3,
+            "product_name": "Iron",
+            "category": "Electronics",
+            "category_id": 2,
+            "Price": 3000,
+            "Color": "Blue",
+            "Company":"Havells",
+            "Image":"https://ibb.co/Kr7CqyZ" 
+        },
+        {
+            "id": 4,
+            "product_name": "Iron",
+            "category": "Electronics",
+            "category_id": 2,
+            "Price": 4000,
+            "Color": "Black",
+            "Company": "Bajaj",
+            "Image":"https://ibb.co/Kr7CqyZ" 
+        },
+        {
+            "id": 5,
+            "product_name": "Computers Accessories & Peripherals",
+            "category": "Computers",
+            "category_id": 3,
+            "Price": 4000,
+            "Color": "Black",
+            "Company": "Bajaj",
+            "Image":"https://ibb.co/Kr7CqyZ" 
+
+        },
+        {"id": 6,
+            "product_name": "Monitors",
+            "category": "Computers",
+            "category_id": 3,
+            "Price":14699,
+            "Color": "Black",
+            "Company": "Dell",
+           "Image":"https://ibb.co/Kr7CqyZ" 
+
+        },
+       {
+        "id": 7,
+            "product_name": "Monitors",
+            "category": "Computers",
+            "category_id": 3,
+            "Price": 32450,
+            "Color": "Black",
+            "Company": "Samsung",
+            "Image":"https://ibb.co/TKgwQZm" 
+       } ,
+       {
+        "id": 8,
+            "product_name": "Monitors",
+            "category": "Computers",
+            "category_id": 3,
+            "Price": 32450,
+            "Color": "Black",
+            "Company": "Samsung",
+            "Image":"https://ibb.co/TKgwQZm" 
+       } ,
+       {
+        "id": 9,
+            "product_name": "Printer",
+            "category": "Computers",
+            "category_id": 3,
+            "Price": "₹18,299",
+            "Color": "Black",
+            "Brand": "Canon",
+            "Image":"https://ibb.co/g918vth" 
+       } ,
+       {
+        "id": 10,
+            "product_name": "Printer",
+            "category": "Computers",
+            "category_id": 3,
+            "Price": 32450,
+            "Color": "Black",
+            "Brand": "Canon",
+            "Image":"https://ibb.co/w0pnNr5" 
+       } ,
+       {
+        "id": 11,
+            "product_name": "Monitors",
+            "category": "Computers",
+            "category_id": 3,
+            "Price": 32450,
+            "Color": "Black",
+            "Company": "Samsung",
+            "Image":"https://ibb.co/TKgwQZm" 
+       } 
+       
+    ]
+}
