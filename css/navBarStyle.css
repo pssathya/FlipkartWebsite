@@ -1,0 +1,37 @@
+.flipKartIcon {
+  height: 20px;
+  width: 100px;
+}
+
+.flipKartPlus {
+  height: 15px;
+}
+
+.brandLogo {
+  width: 110px;
+  display: inline-block;
+  padding: 0;
+  margin: 0;
+  line-height: 0;
+  font-style: italic;
+}
+
+.brandHyperLink {
+  float: left;
+  padding: 0;
+  margin: 0;
+  line-height: 0;
+}
+
+.searchBar {
+  width: 45%;
+}
+
+.loginButton {
+  width: 5%;
+  padding-left: 1%;
+}
+
+.navBarContainer {
+  padding-left: 10%;
+}

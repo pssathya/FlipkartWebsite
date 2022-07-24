@@ -32,38 +32,69 @@
 </head>
 
 <body>
-    <table border="0" width="100%" bgcolor="#2374F0">
-        <tr>
-            <th width="20%">
-                <!--Empty Space-->
-            </th>
-            <th>
-                <h4 style="color:white; ">Flipkart <br>
-                    <span style="font-size: 10px;">Explore <span style="color:yellow">plus&plus;</span></span>
-                </h4>
-            </th>
-            <th>
-                <input type="search" placeholder="Search for products,Brands and more"
-                    style="width: 80%; height:45px; " />
-                <input type="button" value="Search" style="width:15%; height:36px; ">
-            </th>
-            <th>
-                <button type="button" class="btn btn-light">Login</button>
-            </th>
-            <th>
-                <font color="White">Become a Seller</font>
-            </th>
-            <th>
-                <font color="White">More</font>
-            </th>
-            <th>
-                <font color="White">Cart</font>
-            </th>
-            <th width="10%">
-                <!--Empty Space-->
-            </th>
-        </tr>
-    </table>
+    <nav id='darkmode' class="navbar navbar-expand-lg navbar-light bg-primary navBarContainer">
+
+        <div class=" container mx-0">
+
+            <div class="brandLogo">
+                <a class="navbar-brand d-block brandHyperLink" href="#">
+                    <img class="flipKartIcon" src="../images/flipKartLogo.png" alt="">
+                </a>
+                <a class="navbar-brand brandHyperLink" href="#">
+                    <span class="fs-6 explore">Explore</span> <span class="fs-6 text-warning">Plus</span>
+                    <img class="flipKartPlus" src='../images/flipKartLogoPlus.png' alt="">
+                </a>
+            </div>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarHamburgerContent" aria-controls="navbarHamburgerContent"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarHamburgerContent">
+                <form class="d-flex searchBar">
+                    <input class="form-control me-2" type="search" placeholder="Search for products,brands and more"
+                        aria-label="Search" >
+                    <button id="searchButton" class="btn bg-white px-4 text-center" type="button">Search</button>
+                </form>
+                <form class="d-flex loginButton">
+                    <button type="button" class="btn bg-white px-4 text-center">Login</button>
+                </form>
+                
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item ms-5 ">
+                        <a class="nav-link active text-white fw-bold" aria-current="page" href="#">Become a
+                            Seller</a>
+                    </li>
+                    <li class="nav-item dropdown ms-5 fw-bold">
+                        <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            More
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">Notification Preferences</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">24x7 Customer Care</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Advertisement</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item ms-5">
+                        <a class="nav-link active text-white fw-bold" aria-current="page" href="#">Cart</a>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+        <div class="form-check form-switch">
+            <input onclick="changeMode()" class="form-check-input px-2 py-2 me-3" style="width:65px; height: 27px;"
+                type="checkbox" id="flexSwitchCheckDefault">
+        </div>
+    </nav>
     <table border="0" width="100%" bgcolor="white">
         <tr>
             <th width="125">
