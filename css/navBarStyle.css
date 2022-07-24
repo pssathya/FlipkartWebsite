@@ -23,6 +23,11 @@
   line-height: 0;
 }
 
+.explore {
+    color: white;
+    margin-left: 2px;
+}
+
 .searchBar {
   width: 45%;
 }

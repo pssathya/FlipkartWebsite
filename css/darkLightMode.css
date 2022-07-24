@@ -1,0 +1,13 @@
+.mainContainer{
+    /* position: absolute;*/
+    top: 0;
+}
+
+body{
+    background-color:#f1f3f6 !important;  
+    color:black !important
+}
+.myDark{
+    background-color:black !important;
+    color:white !important;
+}

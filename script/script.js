@@ -22,3 +22,9 @@ function bindCouponCloseButtonClickEvent() {
         document.querySelector('#popup').style.display = 'none';
     });
 }
+
+function changeMode(){
+    document.body.classList.toggle('myDark');
+    document.getElementById('mainContainerDiv').classList.toggle('myDark');
+    document.getElementById('navBarContainer').classList.toggle('myDark');
+}
